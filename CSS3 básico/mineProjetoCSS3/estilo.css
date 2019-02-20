@@ -1,0 +1,31 @@
+body{
+	background-image: url('img/fundo.png');
+	font-family: Arial;
+}
+
+div{
+	width: 885px;
+}
+
+#menu{
+	background-color: #C5C5B2;
+	font-size: 24px;
+	padding: 15px;
+
+	width: 875px;
+}
+
+h2{
+	color: #688A08;
+}
+
+.conteudo{
+	background-color: #FFFFFF;
+	border-style: solid;
+	border-width: 15px 10px;
+	border-color: #FFFFFF;
+}
+
+.fotos{
+	border: 15px solid #688A08;
+}
