@@ -33,7 +33,26 @@
 		//Mostrando cordenadas de array
 		echo '<br>' . $pessoa['nome'][3];
 		echo '<br>' .$pessoa['idade'][3];
+		$nomes = ['Joao', 'Luan', 'Carlow', 'Eliza'];
 		
+		//Array multiplos diversa
+		$informacoes = ['nomes' => $nomes, 'idades' => $pessoa['idade'], 'peso' => [60.3, 55.1, 25.7, 80]];
+
+		echo '<hr>';
+		print_r($informacoes);
+
+
+		echo '<hr>';
+
+		//Array multiplos de maneira simples
+		$nomes = ['Joao', 'Luan', 'Carlow', 'Eliza'];
+		$idades = [21, 18, 26, 15];
+
+		$info = ['nomes' => $nomes, 'idades' => $idades];
+
+		print_r($info);
+
+
 	?>
 
 </body>
