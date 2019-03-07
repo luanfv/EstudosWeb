@@ -1,0 +1,43 @@
+.erro{
+	color: red;	
+}
+
+td{
+	padding: 5px;
+}
+
+.padding{
+	padding: 15px;
+}
+
+#hoverMenu:hover{
+	background: #0B3B0B ;
+}
+
+#hoverMenu a{
+	text-decoration: none;
+}
+
+#menu a:link{
+	color: #F2F2F2;
+			
+}
+
+#menu a:visited{
+	color: #F2F2F2;
+}
+
+#menu{
+	background: #0B610B; 
+
+}
+
+body{
+	background: #F2F2F2 ;
+}
+
+div{
+	height: 150%;
+	width: 100%;
+	background: white;
+}
