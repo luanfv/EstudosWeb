@@ -5,7 +5,7 @@
 </h1>
 
 <form method="post">
-	<table>
+	<table class="padding">
 		<tr>
 			<td>
 				Nome:

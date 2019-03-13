@@ -8,13 +8,14 @@
 </head>
 <body>
 <div id="menu">
+	<img src="img/menu.jpg">
 	<table>
 		<tr>
 			<td class="padding" id="hoverMenu">
 				<a href="index.php?pag=pag1">Pagina inicial</a>
 			</td>
 			<td class="padding" id="hoverMenu">
-				<a href="index.php?pag=pag2">Criando a ficha</a>
+				<a href="index.php?pag=pag2">Sobre a empresa</a>
 			</td>
 			<td class="padding" id="hoverMenu">
 				<a href="index.php?pag=pag3">Contato</a>
