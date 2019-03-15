@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		
+	</title>
+	<style>
+		.conteudo{
+			border: red 1px solid;
+			width: 100px;
+			height: 100px;
+			float: right;
+		}
+
+		div{
+			border: blue 1px solid;
+			width: 150px;
+			height: 150px;
+		}
+
+		.conteudo2{
+			border: blue 1px solid;
+			width: 100px;
+			height: 100px;
+			float: left;
+		}
+
+		.conteudo3{
+			border: blue 1px solid;
+			width: 100px;
+			height: 100px;
+			clear: right;
+		}
+	</style>
+</head>
+<body>
+
+	<!--FLOAT - Fica flutuando dependendo do parametro passado, dependendo da situação fica sobre outra tag que não tenha float, e se mais de uma tag tiver float (left por exemplo) elas ficam uma do lado da outra, começando pela que foi digitada primeiro
+	CLEAR - limpa o fluxo float, deixando as proximas tag's abaixo e não do lado -->
+
+	<div class="conteudo">
+		conteudo 1
+	</div>
+
+	<div class="conteudo2">
+		conteudo 2
+	</div>
+
+	<div class="conteudo">
+		conteudo 3
+	</div>
+
+	<div class="conteudo3">
+		conteudo 4
+	</div>
+
+	<div class="conteudo">
+		conteudo 5
+	</div>
+
+	<div>
+		conteudo 6
+	</div>
+
+</body>
+</html>

@@ -1,0 +1,18 @@
+.principal{
+	border: solid 3px black;
+	width: 400px;
+	margin: 20px;
+	padding: 20px;
+}
+
+.form{
+	padding: 20px;
+}
+
+.boton{
+	padding: 5px;
+}
+
+h1{
+	text-align: center;
+}
