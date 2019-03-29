@@ -1,0 +1,102 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+
+body{
+	font-family: Arial;
+	background: #F2F2F2;
+}
+
+h5{
+	margin-bottom: 10px;
+}
+
+hr{
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+/*
+	TOPO
+*/
+
+#topo{
+	width: 100%;
+	height: 200px;
+	background: #FFBF00;
+	text-align: center;
+}
+
+#titulo{
+	font-size: 3em;
+	padding-top: 50px;
+	padding-bottom: 35px;
+}
+
+.menu{
+	font-size: 1.2em;
+	padding: 10px;
+	margin-right: 5px;
+}
+
+#branco{
+	color: white;
+}
+
+/*
+	FIM TOPO
+*/
+
+/*
+	CONTEUDO
+*/
+
+#conteudo{
+	margin-left: auto;
+	margin-right: auto;
+	width: 900px;
+	border: solid red 2px;
+}
+
+.post{
+	margin-top: 15px;
+	padding: 5px;
+	border: solid blue 2px;
+	width: 550px;
+	background: white;
+}
+
+.postImg{
+	border: solid blue 2px;
+	width: 545px;
+}
+
+/*
+	FIM CONTEUDO
+*/
+
+/*
+	MENU LATERAL
+*/
+
+.tituloLateral{
+	display: block;
+	background: #D8D8D8;
+	color: #585858;
+	margin-bottom: 10px;
+}
+
+.menuLateral{
+	border: solid blue 2px;
+	background: white;
+	margin-top: 15px;
+	width: 300px;
+	float: right;
+	clear: right;
+	padding: 10px;
+}
+
+/*
+	FIM MENU LATERAL
+*/
