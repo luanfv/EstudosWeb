@@ -1,3 +1,4 @@
+<?php  include('sair.php'); ?>
 <!DOCTYPE html>
 <html>
 <head>
