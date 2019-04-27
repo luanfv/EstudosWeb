@@ -6,13 +6,15 @@
 	</title>
 
 	<style>
-		a{
+		#sair{
 			float: right;
 		}
 	</style>
 
 </head>
 <body>
-	<a href="index.php">Sair</a>
+	<form action="deslogado.php">
+		<input id="sair" type="submit" value="Sair">
+	</form>
 </body>
 </html>

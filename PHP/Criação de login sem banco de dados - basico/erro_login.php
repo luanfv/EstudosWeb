@@ -1,12 +1,13 @@
-<?php  include('sair.php'); ?>
 <!DOCTYPE html>
 <html>
 <head>
 	<title>
-		Erro de login
+		Falha de login
 	</title>
 </head>
 <body>
-	Login ou senha errada!
+	<h2>ERRO NO LOGIN, SENHA OU LOGIN ERRADO</h2>
+
+	<?php include("index.php"); ?>
 </body>
 </html>
