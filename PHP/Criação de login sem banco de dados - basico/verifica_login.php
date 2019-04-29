@@ -1,5 +1,7 @@
 <?php
 
+	session_start();
+
 	function verifica_conta(){
 		$login = null;
 		$senha = null;
@@ -15,16 +17,17 @@
 
 			if($login == $usuarios[$i]['login'] && $senha == $usuarios[$i]['senha']){
 				
-				session_start();
-
-				return "logado.php";
+				
+				$_SESSION['logado'] = 'sim';
+				return 'location: index.php';
 			}
 
 		}
 
-		return "erro_login.php";
+		session_destroy();
+		return "location: erro_login.php";
 	}
 
-	include(verifica_conta());
+	header(verifica_conta());
 
 ?>

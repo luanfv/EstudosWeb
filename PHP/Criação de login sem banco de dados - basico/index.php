@@ -1,45 +1,62 @@
+<?php 
+
+	session_start();
+
+	include('sair.php');
+
+	if($_SESSION['logado'] != 'sim')
+		include('deslogado.php'); 
+
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
 	<title>
-		Menu de login
+		Logado
 	</title>
 </head>
 <body>
-	<form action="verifica_login.php" method="post">
-		<table>
+	<h2>Seja bem-vindo, login executado com SUCESSO!</h2>
+
+	<table>
+
+		<form action="post.php">
 
 			<tr>
 				<td>
-					Login
+					Titulo
 				</td>
 			</tr>
 
 			<tr>
 				<td>
-					<input type="text" name="login">
+					<input type="text" name="titulo">
 				</td>
 			</tr>
 
 			<tr>
 				<td>
-					Senha
+					Descrição
 				</td>
 			</tr>
+				
+			<tr>
+				<td>
+					<textarea name="descricao" rows="6" cols="30"></textarea>
+				</td>
+			</tr>
+		
 
 			<tr>
 				<td>
-					<input type="password" name="senha">
+					<input type="submit" value="Publicar">
 				</td>
 			</tr>
+		</form>
+	
+	</table>
 
-			<tr>
-				<td>
-					<input type="submit" value="Entrar">
-				</td>
-			</tr>
 
-		</table>
-	</form>
 </body>
 </html>

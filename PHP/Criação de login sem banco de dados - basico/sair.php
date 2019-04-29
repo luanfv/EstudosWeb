@@ -13,8 +13,6 @@
 
 </head>
 <body>
-	<form action="deslogado.php">
-		<input id="sair" type="submit" value="Sair">
-	</form>
+	<a href="deslogado.php" id="sair">Sair</a>
 </body>
 </html>

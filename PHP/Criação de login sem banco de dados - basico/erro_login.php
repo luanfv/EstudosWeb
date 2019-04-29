@@ -6,8 +6,8 @@
 	</title>
 </head>
 <body>
-	<h2>ERRO NO LOGIN, SENHA OU LOGIN ERRADO</h2>
+	<h2>ERRO NO LOGIN, SENHA E/OU LOGIN ERRADO</h2>
 
-	<?php include("index.php"); ?>
+	<?php include("home.php"); ?>
 </body>
 </html>
