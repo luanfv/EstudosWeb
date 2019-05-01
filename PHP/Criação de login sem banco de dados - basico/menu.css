@@ -1,0 +1,19 @@
+#sair{
+	float: right;
+}
+
+#menu{
+	margin: 0px;
+	padding: 0px;
+	width: 100%;
+	height: 70px;
+	background-color: #A4A4A4;
+	margin-bottom: 50px;
+}
+
+#login{
+	position: absolute;
+	top: 0px;
+	color: red;
+	float: right;
+}

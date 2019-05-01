@@ -1,0 +1,19 @@
+.post{
+	width: 500px;
+	height: 300px;
+	border: black solid 10px;
+	margin: auto;
+	margin-bottom: 15px;
+	padding: 15px;
+}
+
+.titulo{
+	font-size: 26px;
+	border: red solid 5px;
+	margin-bottom: 15px;
+}
+
+.conteudo{
+	border: red solid 5px;
+	margin-bottom: 5px;
+}

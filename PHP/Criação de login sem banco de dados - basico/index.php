@@ -2,8 +2,6 @@
 
 	session_start();
 
-	include('sair.php');
-
 	if($_SESSION['logado'] != 'sim')
 		include('deslogado.php'); 
 
@@ -15,8 +13,17 @@
 	<title>
 		Logado
 	</title>
+
+	<style>
+		#sair{
+			position: relative;
+			float: right;
+			display: inline;
+		}
+	</style>
 </head>
 <body>
+	<a href="deslogado.php" id="sair">SAIR</a>
 	<h2>Seja bem-vindo, login executado com SUCESSO!</h2>
 
 	<table>

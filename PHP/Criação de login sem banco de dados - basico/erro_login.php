@@ -8,6 +8,6 @@
 <body>
 	<h2>ERRO NO LOGIN, SENHA E/OU LOGIN ERRADO</h2>
 
-	<?php include("home.php"); ?>
+	<?php include("login.php"); ?>
 </body>
 </html>
