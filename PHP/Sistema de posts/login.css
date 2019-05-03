@@ -1,0 +1,57 @@
+body{
+	background: #A9F5E1;
+	font-family: Gill Sans, sans-serif;
+	color: #5F4C0B;
+}
+
+a{
+	text-decoration: none;
+}
+
+#principal{
+	width: 400px;
+	height: 400px;
+	margin: auto;
+	margin-top: 6.5%;
+	background-color: rgba(255,255,255,0.4);
+	border-radius: 10px;
+}
+
+#conect{
+	font-size: 2.5em;
+	margin-top: 15%;
+	margin-bottom: 10%;
+	text-align: center;
+	font-weight: 600;
+}
+
+#tabela{
+	margin: auto;
+	margin-top: 10%;
+}
+
+.login{
+	border-radius: 5px;
+	padding: 10px;
+	margin: 10px;
+	font-size: 1.2em;
+	background: #FAFAFA;
+}
+
+#botao{
+	font-weight: 550;
+	border-radius: 5px;
+	padding: 10px;
+	margin: 10px;
+	font-size: 1.2em;
+	width: 265px;
+	background-color: #F4FA58;
+	color: #5F4C0B;
+}
+
+#link{
+	color: #5F4C0B;
+	font-weight: 600;
+}
+
+
