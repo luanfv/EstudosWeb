@@ -1,7 +1,9 @@
 body{
-	background: #A9F5E1;
 	font-family: Gill Sans, sans-serif;
-	color: #5F4C0B;
+	color: black;
+	background: url("img/fundo.jpg") fixed;
+	background-size: 100%;
+	background-attachment: fixed;
 }
 
 a{
@@ -13,7 +15,7 @@ a{
 	height: 400px;
 	margin: auto;
 	margin-top: 6.5%;
-	background-color: rgba(255,255,255,0.4);
+	background-color: rgba(255,255,255, 0.9);
 	border-radius: 10px;
 }
 
@@ -23,6 +25,7 @@ a{
 	margin-bottom: 10%;
 	text-align: center;
 	font-weight: 600;
+
 }
 
 #tabela{
@@ -45,13 +48,15 @@ a{
 	margin: 10px;
 	font-size: 1.2em;
 	width: 265px;
-	background-color: #F4FA58;
-	color: #5F4C0B;
+	background-color: #FFBF00;
 }
 
 #link{
-	color: #5F4C0B;
+	color: black;
 	font-weight: 600;
 }
 
-
+#erro{
+	color: red;
+	text-align: center;
+}

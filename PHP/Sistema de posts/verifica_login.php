@@ -2,6 +2,8 @@
 
 	session_start();
 
+	$_SESSION['erro_login'] = '';
+
 	function verifica_conta(){
 		$login = null;
 		$senha = null;
@@ -24,8 +26,8 @@
 
 		}
 
-		session_destroy();
-		return "location: erro_login.php";
+		$_SESSION['erro_login'] = 'Login e/ou senha incorreta';
+		return "location: login.php";
 	}
 
 	header(verifica_conta());

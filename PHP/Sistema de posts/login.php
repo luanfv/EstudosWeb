@@ -1,7 +1,7 @@
 <?php 
 	session_start();
 
-	if($_SESSION['logado'] == 'sim')
+	if(isset($_SESSION['logado']) && $_SESSION['logado'] == 'sim')
 		header('location: index.php');
 
 ?>
@@ -9,7 +9,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<link rel="stylesheet" type="text/css" href="login.css">
+	<link rel="stylesheet" type="text/css" href="css\login.css">
 	<title>
 		Login
 	</title>
@@ -22,7 +22,7 @@
 
 		<div>
 
-			<form action="verifica_login.php">
+			<form action="verifica_login.php" method="post">
 				<table id="tabela">
 
 					<tr>
@@ -42,6 +42,15 @@
 					<tr>
 						<td>
 							<input class="login" type="password" name="senha" placeholder="Digite sua senha">
+						</td>
+					</tr>
+
+					<tr>
+						<td id="erro">
+							<?php
+								if(isset($_SESSION['erro_login']))
+									echo $_SESSION['erro_login'];
+							?>
 						</td>
 					</tr>
 

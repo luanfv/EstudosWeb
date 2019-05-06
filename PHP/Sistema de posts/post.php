@@ -11,6 +11,6 @@
 	
 	add_post($post);
 
-	mostrar_posts();
+	header('location: home.php');
 ?>
 

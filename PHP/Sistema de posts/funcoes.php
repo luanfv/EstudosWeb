@@ -1,14 +1,31 @@
 <?php 
 	
 
-	function add_post($post){
-		$texto = implode('_._', $post) . PHP_EOL;
+	function menu(){
+		?>
+		<body>
 
-		$arquivo = fopen('arquivo.txt', 'a');
+			<div id="menu">
+				
+				<input id="pesquisa" type="text" placeholder="Pesquise um post" name="pesquisa">
+				<input id="botaoPesquisa" type="submit" value="Pequisar">
 
-		fwrite($arquivo, $texto);
-		fclose($arquivo);
+				<?php
 
+					if(isset($_SESSION['logado']) && $_SESSION['logado'] == 'sim'){
+						?>
+
+							<a class="navegacao" href="deslogado.php">SAIR</a>
+						<?php
+					}
+
+				?>
+
+				<a class="navegacao" href="login.php" >LOGIN</a>
+				<a class="navegacao" href="" >SOBRE</a>
+				<a class="navegacao" href="home.php" >HOME</a>
+			</div>
+		<?php 
 	}
 
 	function mostrar_posts(){
@@ -27,32 +44,14 @@
 
 		?>
 
-		<!DOCTYPE html>
-		<html>
-		<head>
-			<title>
-				
-			</title>
-			<link rel="stylesheet" type="text/css" href="home.css">
-		</head>
-		<body>
-
-			<div id="menu">
-				<a id="logar" href="login.php">Logar</a>
-				<div id="layout">
-					<a class="layouts" href="home.php">Home</a>
-					<a class="layouts" href="">Sobre nós</a>
-					<a class="layouts" href="">Fale conosco</a>
-				</div>
-				
-			</div>
+		<div id="main">
 
 		<?php
 		for($i = 0; $i < count($postagens) - 1;$i++){
 
 		?>
 
-			<div id="conteudo">
+			<div class="post">
 				<div class="titulo">
 
 					<?php
@@ -62,7 +61,7 @@
 					?>
 				</div>
 
-				<div class="post">
+				<div class="descricao">
 					
 					<?php
 
@@ -73,20 +72,120 @@
 
 			</div>
 
-		<?php } ?>
+		</div>
 
-			<div id="rodape">
-				<div id="desenvolvedor">Desenvolvido por: <a href="https://github.com/Luanfv">Luan França Vieira</a></div>
-				<a href="home.php" class="homeRodape">HOME</a>
-				<a href="login.php" class="homeRodape">LOGAR</a>
-			</div>
-
-		</body>
-		</html>
-
-		<?php
+		<?php 
+		}
 
 		fclose($arquivo);
 	}
+
+	function cadastro(){?>
+			<div id="cadastro">
+				<div id="cadastroConteudo">
+					<form action="post.php" method="post">
+						<table id="cadastroTabela">
+
+							<th id="cadastre">
+								
+									CADASTRE UM POST
+								
+							</th>
+
+							<tr>
+								<td class="espacamento">
+									
+								</td>
+							</tr>
+
+							<tr>
+								<td class="cadastroTitulo">
+									Titulo
+								</td>
+							</tr>
+
+							<tr>
+								<td>
+									<input class="informcaoes" type="text" name="titulo">
+								</td>
+							</tr>
+
+							<tr>
+								<td class="espacamento">
+									
+								</td>
+							</tr>
+
+							<tr>
+								<td class="cadastroTitulo">
+									Conteudo
+								</td>
+							</tr>
+
+							<tr>
+								<td>
+									<textarea class="informcaoes" cols="60" rows="20" name="descricao"></textarea>
+								</td>
+							</tr>
+
+							<tr>
+								<td class="espacamento">
+									
+								</td>
+							</tr>
+
+							<tr>
+								<td>
+									<input id="btnCadastro" type="submit" value="Publicar">
+								</td>
+							</tr>
+
+						</table>
+					</form>
+				</div>
+			</div>
+	<?php
+	}
+
+	function rodape(){
+	?>
+
+		<div id="rodape">
+			<div id="msgRodape">
+				<div class="conteudoRodape">
+					Desenvolvido por: <a href="https://github.com/Luanfv">Luan França Vieira</a>
+				</div>
+
+				<div class="conteudoRodape">
+					Situação: 
+					<?php 
+
+					
+						if($_SESSION['logado'] == 'sim'){
+							echo "Logado";
+						}
+						else{
+							echo "Deslogado";
+						}
+					?>
+				</div>
+
+			</div>
+		</div>
+
+	<?php
+	}
+
+	function add_post($post){
+		$texto = implode('_._', $post) . PHP_EOL;
+
+		$arquivo = fopen('arquivo.txt', 'a');
+
+		fwrite($arquivo, $texto);
+		fclose($arquivo);
+
+	}
+
+	
 
 ?>
