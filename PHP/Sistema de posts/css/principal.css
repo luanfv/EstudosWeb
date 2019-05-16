@@ -1,0 +1,11 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	font-family: Gill Sans, sans-serif;
+}
+
+body{
+	background: url('img/fundo.jpg') fixed;
+	background-size: 100%;
+	background-attachment: fixed;
+}

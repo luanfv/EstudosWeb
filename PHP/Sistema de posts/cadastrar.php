@@ -1,7 +1,8 @@
 <?php
 
 	session_start();
-	include ('funcoes.php'); 
+	include('funcoes.php');
+	verifica_login();
 
 ?>
 
@@ -9,20 +10,22 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<link rel="stylesheet" type="text/css" href="css/principal.css">
+
 	<link rel="stylesheet" type="text/css" href="css/menu.css">
-	<link rel="stylesheet" type="text/css" href="css/home.css">
+	<link rel="stylesheet" type="text/css" href="css/principal.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/cadastrar.css">
 	<link rel="stylesheet" type="text/css" href="css/rodape.css">
 	<title>
-
+		
 	</title>
 </head>
 <body>
 
-	<?php 
-	
+	<?php
+
 		include('menu.php');
-		include('home_conteudo.php');
+		include('cadastrar_conteudo.php');
 		include('rodape.php');
 
 	?>

@@ -11,18 +11,19 @@
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="css/principal.css">
 	<link rel="stylesheet" type="text/css" href="css/menu.css">
-	<link rel="stylesheet" type="text/css" href="css/home.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/posts.css">
 	<link rel="stylesheet" type="text/css" href="css/rodape.css">
 	<title>
-
+		Post
 	</title>
 </head>
 <body>
 
-	<?php 
-	
+	<?php
+
 		include('menu.php');
-		include('home_conteudo.php');
+		include('verifica_noticia.php');
 		include('rodape.php');
 
 	?>

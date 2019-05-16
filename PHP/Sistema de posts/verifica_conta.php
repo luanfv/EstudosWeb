@@ -1,10 +1,9 @@
 <?php
-
+	
 	session_start();
-
 	$_SESSION['erro_login'] = '';
 
-	function verifica_conta(){
+	function verifica_contas(){
 		$login = null;
 		$senha = null;
 
@@ -18,18 +17,16 @@
 		for($i = 0; $i < count($usuarios); $i++){
 
 			if($login == $usuarios[$i]['login'] && $senha == $usuarios[$i]['senha']){
-				
-				
+					
 				$_SESSION['logado'] = 'sim';
-				return 'location: index.php';
+				return 'location: home.php';
 			}
 
 		}
 
-		$_SESSION['erro_login'] = 'Login e/ou senha incorreta';
-		return "location: login.php";
+		return "location: login.php?erro_login=sim";
 	}
 
-	header(verifica_conta());
-
+	header(verifica_contas());
+	
 ?>

@@ -1,183 +1,69 @@
-*{
-	margin: 0px;
-	padding: 0px;
+#postsRecentes{
+	padding-top: 400px;
+	margin: auto;
+	width: 95%;
+	border-radius: 10px;
+	margin-bottom: 100px;
 }
 
-body{
-	background: url("img/fundo.jpg") fixed;
-	background-size: 100%;
-	background-attachment: fixed;
-	font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
-}
-
-textarea{
-	resize: none;
-}
-
-/* MENU */
-
-#menu{
-	width: 100%;
-	height: 50px;
-	background-color: #FFFFFF;
-	position: fixed;
-}
-
-#menu a{
-	text-decoration: none;
+#postsRecentes a{
 	color: black;
+	text-decoration: none;
 }
 
-#menu a:hover{
-	border-top: #FFBF00 solid 3px;
+#postsRecentes a:hover{
+	text-decoration: underline;
 }
 
-#inputs{
-	margin-left: 15px;
+.txtRecentes{
+	font-size: 2em;
+	padding: 5px;
+	background-color: #D8D8D8;
+	border-radius: 10px;
+	padding-left: 15px;
 }
 
-#pesquisa{
-	margin-left: 15px;
-	border-radius: 5px;
-	display: inline;
-	padding: 8px;
-	font-size: 14px;
-	width: 250px;
-	background: #F2F2F2;
+.imgRecentes{
+	width: 600px;
+	height: 400px;
+	padding: 5px;
+	background-color: #FAFAFA;
+	border-radius: 10px;
 }
 
-#botaoPesquisa{
-	margin-top: 5px;
-	border-radius: 5px;
-	display: inline;
-	padding: 8px;
-	background-color: #FFBF00;
-	background-repeat: no-repeat;
-	font-weight: 550;
+#mainRecentes{
+	margin-top: 100px;
+	padding-top: 40px;
+	width: 95%;
+	background-color: #FAFAFA;
+	border-radius: 10px;
+	margin: auto;
 }
 
-.navegacao{
-	float: right;
+#tituloRecentes{
+	text-align: center;
 	padding: 10px;
-	margin-right: 10px;
+	width: 98.5%;
+	background-color: #D8D8D8;
+	margin-bottom: 50px;
+	border-radius: 10px;
+	color: black;
 	font-weight: 600;
 }
 
-/* FIM MENU */
-
-
-/* MAIN */
-
-#main{
-	padding-top: 600px;
-	margin: auto;
-}
-
-.post{
-	background-color: #FAFAFA;
-	border-radius: 10px; 
-	width: 80%;
-	margin: auto;
-}
-
-.titulo{
-	padding: 10px;
-	font-size: 1.5em;
-	background-color: #E6E6E6;
-	margin: 10px 10px;
-	border-radius: 10px;
-}
-
-.descricao{
-	padding: 20px;
-	margin: auto;
-	margin-bottom: 30px;
-}
-
-/* FIM MAIN */
-
-/* RODAPE */
-
-#rodape{
-	width: 100%;
-	height: 75px;
-	background-color: #FFFFFF;
-	padding-top: 25px;
-	margin-top: 75px;
-	color: #6E6E6E;
-}
-
-#rodape a{
-	color: #6E6E6E;
-	text-decoration: none;
-}
-
-#rodape a:hover{
-	color: black;
-	font-size: 1.2em;
-}
-
-#msgRodape{
-	margin: auto;
-	width: 30%;
-}
-
-.conteudoRodape{
+#sobreRecentes{
 	text-align: center;
-}
-
-/* FIM RODAPE */
-
-/* CADASTRO */
-
-#cadastro{
-	padding-top: 100px;
-	margin: auto;
-	width: 80%;
-	border-radius: 10px;
-	margin-bottom: 30px; 
-}
-
-#cadastroConteudo{
-	background-color: #FFFFFF;
-	border-radius: 10px;
-}
-
-#cadastroTabela{
-	width: 75%;
-	margin: auto;
-	padding: 30px 5px;
-}
-
-#cadastre{
-	font-size: 2em;
-	color: #FFBF00;
-	font-weight: 800;
-	background-color: #E6E6E6;
-	border-radius: 10px;
-}
-
-.espacamento{
-	padding: 15px;
-}
-
-.informcaoes{
-	font-size: 1.2em;
-	padding: 5px;
-	border-radius: 5px;
-}
-
-.cadastroTitulo{
-	font-size: 1.4em;
-	padding: 5px;
-	border-radius: 5px;
-}
-
-#btnCadastro{
 	padding: 10px;
-	font-size: 1.4em;
-	background-color: #FFBF00;
-	border-radius: 5px;
+	width: 98.5%;
+	background-color: #D8D8D8;
 }
 
-/* FIM CADASTRO */
+#txtSobreRecentes{
+	padding: 20px 75px;
+	border-radius: 10px;
+}
+
+.edicao{
+	color: #04B404;
+	background-color: #A9F5A9;
+}

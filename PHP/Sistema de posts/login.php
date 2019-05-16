@@ -2,7 +2,7 @@
 	session_start();
 
 	if(isset($_SESSION['logado']) && $_SESSION['logado'] == 'sim')
-		header('location: index.php');
+		header('location: cadastrar.php');
 
 ?>
 
@@ -22,7 +22,7 @@
 
 		<div>
 
-			<form action="verifica_login.php" method="post">
+			<form action="verifica_conta.php" method="POST">
 				<table id="tabela">
 
 					<tr>
@@ -48,8 +48,9 @@
 					<tr>
 						<td id="erro">
 							<?php
-								if(isset($_SESSION['erro_login']))
-									echo $_SESSION['erro_login'];
+								if(isset($_REQUEST['erro_login']) && $_REQUEST['erro_login'] = 'sim'){
+									echo "Login e/ou senha incorreta";
+								}
 							?>
 						</td>
 					</tr>

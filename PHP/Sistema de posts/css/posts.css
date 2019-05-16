@@ -1,0 +1,63 @@
+a{
+	text-decoration: none;
+	color: black;
+}
+
+a:hover{
+	text-decoration: underline;
+}
+
+.post{
+	padding: 20px;
+	margin-bottom: 25px;
+	width: 100%;
+}
+
+.postTitulo{
+	font-size: 1.5em;
+	width: 100%;
+}
+
+.postData{
+	font-size: 0.8em;
+}
+
+.postResumo{
+	font-size: 1.2em;
+	width: 98%;
+	height: 500px;
+	float: left;
+}
+
+.postImagem{
+	width: 55%;
+	height: 500px;
+}
+
+.postImg{
+	width: 100%;
+	height: 100%;
+}
+
+.postTexto{
+	font-size: 1.2em;
+	width: 00%;
+	margin: auto;
+}
+
+.espacamentoPost{
+	padding-top: 200px;
+}
+
+.pequenoEspaco{
+	margin-bottom: 25px;
+	background-color: red;
+}
+
+.delete-edite{
+	float: right;
+	padding: 5px;
+	margin-right: 5px;
+	background: #FFBF00;
+	border: black 2px solid;
+}
