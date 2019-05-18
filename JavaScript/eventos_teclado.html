@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <script>
+        function eventoTeclado(){
+            alert('Evento executado');
+        }
+    </script>
+
+    <title>
+
+    </title>
+</head>
+<body>
+    
+    <!-- Evento executa antes de aparecer o que foi digitado -->
+    <input type="text" onkeydown="eventoTeclado()">
+
+    <!-- Evento executa apos aparecer o que foi digitado -->
+    <input type="text" onkeyup="eventoTeclado()">
+
+    <!-- Evento executa antes de aparecer o que foi digitado, mas só aceita caracter(shift ou ctrl por exemplo ele não indentifica) -->
+    <input type="text" onkeypress="eventoTeclado()">
+
+</body>
+</html>

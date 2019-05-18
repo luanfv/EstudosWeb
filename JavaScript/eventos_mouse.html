@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <title>Eventos com o mouse</title>
+
+    <style>
+    
+        div{
+            float: left;
+            margin-left: 15px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div onclick="alert('Evento iniciado');" style="background: blue; height: 150px; width: 150px;">
+        Evento de click
+    </div>
+
+    <div ondblclick="alert('Evento iniciado');" style="background: red; height: 150px; width: 150px;">
+        Evento dispara com duplo click
+    </div>
+
+    <div onmouseup="alert('Evento iniciado');" style="background: yellow; height: 150px; width: 150px;">
+       Evento dispara depois de soltar o click
+    </div>
+
+    <div onmouseover="alert('Evento iniciado');" style="background: yellowgreen; height: 150px; width: 150px;">
+        Evento dispara quando passa por cima
+    </div>
+
+    <div onmouseout="alert('Evento iniciado');" style="background: green; height: 150px; width: 150px;">
+        Evento dispara quando tira o mouse de dentro da div
+    </div>
+</body>
+</html>
