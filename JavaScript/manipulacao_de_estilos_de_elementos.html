@@ -1,0 +1,60 @@
+<html>
+
+    <head>
+
+        <style>
+        
+            main{
+                width: 900px;
+                height: 750px;
+                margin-left: 25%;
+            }
+
+            #estilo{
+                width: 500px;
+                height: 300px;
+                border: black 2px solid;
+                margin: auto;       
+            }
+
+            #buttons{
+                margin-left: 10%;
+            }
+
+            .button{
+                width: 200px;
+                margin: 10px;
+                padding: 25px 50px;
+                
+            }
+        
+        </style>
+
+        <script>
+            function modificaEstilo(estilo){
+                document.getElementById('estilo').style.background = estilo
+            }
+        </script>
+
+    </head>
+
+    <body>
+
+        <main>
+            
+            <div id="buttons">
+                <button type="text" onclick="modificaEstilo('#2E64FE')" class="button">Azul</button>
+                <button type="text" onclick="modificaEstilo('#FF0000')" class="button">Vermelho</button>
+                <button type="text" onclick="modificaEstilo('#00FF00')" class="button">Verde</button>
+            </div>
+
+            <hr>
+
+            <div id="estilo">
+
+            </div>
+        </main>
+
+    </body>
+
+</html>
