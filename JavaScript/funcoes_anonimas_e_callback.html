@@ -1,0 +1,37 @@
+<html>
+
+    <head>
+
+        <script>
+        
+            //função anonima
+            var funcao_anonima = function(nome){
+                document.write("Olá " + nome + ", seja bem-vindo!")
+            }
+
+            //callback
+            function callback(id, funcao_anonima){
+                if(id == 1){
+                    funcao_anonima('Gerald')  
+                }
+                else{
+                    document.write("Houve um erro!")
+                }
+                document.write("<br>")
+            }
+
+            
+            //exemplo de callback 1
+            callback(1, funcao_anonima)
+            //exemplo de callback 2
+            callback(2, funcao_anonima)
+
+        </script>
+
+    </head>
+
+    <body>
+
+    </body>
+
+</html>
