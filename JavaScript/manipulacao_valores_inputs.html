@@ -1,0 +1,58 @@
+<html>
+
+    <head>
+
+        <script>
+        
+            function distribuiCaracter(){
+                //Pega o valor informado pelo id input
+                var char = (document.getElementById('input').value)
+                //Tira os espaços em branco
+                char.trim()
+
+                //Apaga o valor do id input
+                document.getElementById('input').value = ''
+                
+                switch(char){
+                    case '0':
+                    case '1':
+                    case '2':
+                    case '3':
+                    case '4':
+                    case '5':
+                    case '6':
+                    case '7':
+                    case '8':
+                    case '9':
+                    //Insere no campo de numeros
+                        document.getElementById('numero').value += char
+                        break;
+                    //Insere no campo de caracter
+                    default:
+                        document.getElementById('letra').value += char
+                }
+
+            }
+
+        </script>
+
+    </head>
+
+    <body>
+
+        <input type="text" placeholder="Digite alguma coisa" onkeyup="distribuiCaracter()" id='input'>
+        <div id="descricao">
+
+        </div>
+
+        <hr>
+
+        <span>Letras</span>
+        <input type="text" disabled="disabled" id='letra'>
+
+        <span>Numeros</span>
+        <input type="text" disabled="disabled" id='numero'>
+
+    </body>
+
+</html>
