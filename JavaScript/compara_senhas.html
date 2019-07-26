@@ -1,0 +1,149 @@
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <title>Verificação de senha</title>
+        <style>
+        
+            main{
+                padding-top: 100px;
+                width: 800px;
+                height: 750px;
+                margin: auto;
+            }
+
+            .center{
+                margin-left: 33%;
+            }
+
+            #input{
+                border: 2px solid black;
+                border-radius: 10px;
+                font-size: 1.5em;
+                background: #E6E6E6;
+                width: 290px;
+                height: 30px;
+            }
+
+            #input2{
+                border: 2px solid black;
+                border-radius: 10px;
+                font-size: 1.5em;
+                background: #E6E6E6;
+                width: 290px;
+                height: 30px;
+            }
+
+            #button{
+                width: 290px;
+                height: 40px;
+                text-align: center;
+                margin: auto;
+            }
+
+            #resultado{
+                margin-left: 23.5%;
+                color: black;
+                font-size: 1.5em;
+                width: 460px;
+                height: 30px;
+                text-align: center;
+            }
+
+        </style>
+
+        <script>
+        
+            var senha;
+            var senha2;
+
+            //Verifica se possue mais de 3 letras e transforma a borda em verde, senão transforma em vermelho
+            function letras(){
+                let tamanho = document.getElementById("input").value.length
+                console.log(tamanho)
+
+                if(tamanho > 3){
+                    document.getElementById("input").style.borderColor = 'green';
+                }
+                else{
+                    document.getElementById("input").style.borderColor = 'red';
+                }
+
+                senha = document.getElementById("input").value
+            }
+
+            //Verifica se a primeira senha é igual a segunda
+            function verifica(){
+                senha2 = document.getElementById('input2').value
+                
+                if(senha == senha2){
+                    document.getElementById('input2').style.borderColor = 'green';
+                }
+                else{
+                    document.getElementById('input2').style.borderColor = 'red';
+                }
+            }
+
+            //transforma o input em branco caso o mouse esteja encima
+            function on_mouse_input(){
+                document.getElementById("input").style.backgroundColor = 'white'
+            }
+
+            //transforma o input em cinza se tirar o mouse de cima
+            function on_mouse_out_input(){
+                document.getElementById("input").style.backgroundColor = '#E6E6E6'
+            }
+
+            //transforma o input em branco caso o mouse esteja encima
+            function on_mouse_input2(){
+                document.getElementById("input2").style.backgroundColor = 'white'
+            }
+
+            //transforma o input em cinza se tirar o mouse de cima
+            function on_mouse_out_input2(){
+                document.getElementById("input2").style.backgroundColor = '#E6E6E6'
+            }
+
+            //Mostra mensagem personalizada para cada situação
+            function finalizar(){
+                if(senha.length <= 3){
+                    document.getElementById("resultado").style.color = 'red'
+                    document.getElementById('resultado').value = 'A senha deve ter no minimo 3 (três) digitos'
+                }
+                else if(senha != senha2){
+                    document.getElementById("resultado").style.color = 'red'
+                    document.getElementById("resultado").value = "As senhas não são iguais"
+                }
+                else{
+                    document.getElementById("resultado").style.color = 'green'
+                    document.getElementById("resultado").value = "SUCESSO!"
+                }
+            }
+
+        </script>
+
+    </head>
+
+    <body>
+
+        <main>
+            <h1 class="center">
+                Verificação de senhas
+            </h1>
+            
+            <hr>
+            <div class="center">
+                <input id="input" type="password" onkeyup="letras()" onmouseover="on_mouse_input()" onmouseout="on_mouse_out_input()">
+                <br><br>
+                <input id="input2" type="password" onkeyup="verifica()" onmouseover="on_mouse_input2()" onmouseout="on_mouse_out_input2()">
+                <br><br>
+                <button id="button" onclick="finalizar()">Confirmar</button>
+            </div>
+            <br><br>
+
+            <input id="resultado" type="text" disabled="disabled">
+
+        </main>
+
+    </body>
+</html>
