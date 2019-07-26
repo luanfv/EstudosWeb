@@ -60,7 +60,6 @@
             //Verifica se possue mais de 3 letras e transforma a borda em verde, senão transforma em vermelho
             function letras(){
                 let tamanho = document.getElementById("input").value.length
-                console.log(tamanho)
 
                 if(tamanho > 3){
                     document.getElementById("input").style.borderColor = 'green';
@@ -108,7 +107,7 @@
             function finalizar(){
                 if(senha.length <= 3){
                     document.getElementById("resultado").style.color = 'red'
-                    document.getElementById('resultado').value = 'A senha deve ter no minimo 3 (três) digitos'
+                    document.getElementById('resultado').value = 'A senha deve ter mais 3 (três) digitos'
                 }
                 else if(senha != senha2){
                     document.getElementById("resultado").style.color = 'red'
