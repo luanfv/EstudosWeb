@@ -1,0 +1,143 @@
+<html>
+
+    <head>
+
+        <title>
+            Calculadora Simples
+        </title>
+
+        <style>
+
+            main{
+                width: 250px;
+                height: 400px;
+                border: solid 1px black;
+                margin: auto;
+            }
+
+            #resultado{
+                padding: 5px;
+                text-align: right;
+                margin: 20px 10%;
+                width: 195px;
+                height: 30px;
+            }
+        
+            #agrupaNumeros{
+                width: 200px;
+                height: 250px;
+                align-content: center;
+                margin: auto;
+                text-align: center;
+            }
+
+            .numeros{
+                width: 50px;
+                height: 50px;
+                margin: 7px;
+                float: left;
+            }
+
+            #resposta{
+                width: 195px;
+                height: 30px;
+                margin: 20px 0%;
+                padding: 5px;
+                text-align: center;
+                
+            }
+        
+        </style>
+
+
+        <script>
+
+            var resultado = ''
+
+            //Adiciona os valores em forma de string e mostra no id='resultado'
+            function calcular(valor){
+                resultado += '' + valor
+                document.getElementById('resultado').value = resultado
+            }
+
+            //Transforma a string em uma operação matematica e mostra o resultado no id='resultado'
+            function resposta(){
+                if(resultado == ''){
+                    document.getElementById('resultado').value = 0
+                    return
+                }
+
+                resultado = eval(resultado)
+                document.getElementById('resultado').value = resultado
+                resultado = ''
+            }
+
+        
+        </script>
+
+    </head>
+
+    <body>
+        <main>
+
+            <input id="resultado" type="text" disabled="disabled">
+
+            <div id="agrupaNumeros">
+
+                <button class="numeros" onclick="calcular(1)">
+                    1
+                </button>
+
+                <button class="numeros" onclick="calcular(2)">
+                    2
+                </button>
+
+                <button class="numeros" onclick="calcular(3)">
+                    3
+                </button>
+                
+                <button class="numeros" onclick="calcular(4)">
+                    4
+                </button>
+
+                <button class="numeros" onclick="calcular(5)">
+                    5
+                </button>
+
+                <button class="numeros" onclick="calcular(6)">
+                    6
+                </button>
+
+                <button class="numeros" onclick="calcular(7)">
+                    7
+                </button>
+
+                <button class="numeros" onclick="calcular(8)">
+                    8
+                </button>
+
+                <button class="numeros" onclick="calcular(9)">
+                    9
+                </button>
+
+                <button id="adicao" class="numeros" onclick="calcular('+')">
+                    +
+                </button>
+    
+                <button class="numeros" onclick="calcular(0)">
+                    0
+                </button>
+    
+                <button id="subtracao" class="numeros" onclick="calcular('-')">
+                    -
+                </button>
+
+                <button id="resposta" onclick="resposta()">Resultado</button>
+
+            </div>
+
+        </main>
+    </body>
+
+
+</html>
