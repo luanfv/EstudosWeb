@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>
+		Timing
+    </title>
+    
+    <script>
+
+        //Executa uma função depois do tempo determinado
+        //No exemplo foi passada a função de mostrar na tela 'teste do setTimeout' depois de 1 milisegundos
+        setTimeout(function(){
+            document.write('teste do setTimeout<br>')
+        }, 1)
+    
+        var segundos = 0
+        var minutos = 0
+
+        //Executa uma função toda vez que o tempo em milisegundos passado for percorrido
+        //No exemplo é para printar o minuto e segundo e atualizar todos os segundos
+        setInterval(function(){
+            document.write(minutos + ":" + segundos + "<br>")
+            if(segundos < 60){
+                console.log(segundos)
+                segundos++
+            }
+            else {
+                segundos = 0
+                minutos++
+            }
+        }, 1000)
+    
+    </script>
+
+</head>
+<body>
+	
+</body>
+</html>
