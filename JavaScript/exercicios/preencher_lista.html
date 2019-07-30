@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+    </head>
+
+    <body>
+
+        <input type="text" id="aluno" placeholder="Novo aluno(a)">
+        <button id="add"></button>
+
+    </body>
+</html>
+
+<script>
+
+    var body = document.querySelector("body")
+
+    var addAlunos = document.querySelector("#add")
+    addAlunos.append(document.createTextNode("Adicionar"))
+
+    addAlunos.onclick = function(){
+        var aluno = document.querySelector("#aluno").value
+        document.querySelector("#aluno").value = '' 
+        var alunoElement = document.createElement("ul")
+
+        alunoElement.append(document.createTextNode(aluno))
+        body.appendChild(alunoElement)
+    }
+
+</script>
+
