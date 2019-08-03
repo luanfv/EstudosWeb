@@ -1,0 +1,10 @@
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script>
+    axios.get("https://api.github.com/users/Luanfv")
+    .then(function(response){
+        console.log(response.data.avatar_url)
+    })
+    .catch(function(error){
+        console.log("DEU RUIM!" + error)
+    })
+</script>
