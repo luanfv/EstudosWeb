@@ -1,0 +1,29 @@
+<script>
+
+    function promise(){
+        //declara uma variavel que irá receber as requisições 
+        var ajax = new XMLHttpRequest()
+        //seta uma requisição
+        ajax.open("GET", "https://api.github.com/")
+        //executa
+        ajax.send(null)
+        //apos ela estar pronta, mostra no console suas informações
+        ajax.onreadystatechange = function(){
+            if(ajax.readyState == 4){
+                if(ajax.status == 200)
+                    console.log(JSON.parse(ajax.responseText))
+                else
+                    console.log("DEU RUIM! Status não é 200")
+            }
+        }
+    }
+
+    promise()
+    .then(function(reponse){
+        console.log(reponse)
+    })
+    .catch(function(error){
+        console.log(error)
+    })
+
+</script>   
