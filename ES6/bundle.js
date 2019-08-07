@@ -6,19 +6,26 @@ function _defineProperties(target, props) { for (var i = 0; i < props.length; i+
 
 function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
 
-alert("Hello");
+alert("Hello"); // EXEMPLO DE CLASSE
 
-var Teste =
+var TodoList =
 /*#__PURE__*/
 function () {
-  function Teste() {
-    _classCallCheck(this, Teste);
+  function TodoList() {
+    _classCallCheck(this, TodoList);
+
+    this.list = [];
   }
 
-  _createClass(Teste, [{
-    key: "qualquer",
-    value: function qualquer() {}
+  _createClass(TodoList, [{
+    key: "addToto",
+    value: function addToto() {
+      this.list.push("NOVO TODO");
+      console.log(this.list);
+    }
   }]);
 
-  return Teste;
+  return TodoList;
 }();
+
+var list = new TodoList();
