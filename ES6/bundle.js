@@ -28,4 +28,24 @@ function () {
   return TodoList;
 }();
 
-var list = new TodoList();
+var list = new TodoList(); // TRABALHANDO COM ARRAY NO ES6
+// percorre todo array e retorna a logica determinada dentro da função
+
+var array = [1, 2, 6, 9];
+var newArray = array.map(function (valor) {
+  return valor * 2;
+});
+console.log(array, newArray); // [1, 2, 6, 9], [2, 4, 12, 18]
+// pega o valor atual e o proximo e retorna o que for determinado na logica
+
+var totalArray = array.reduce(function (total, proximo) {
+  return total + proximo;
+});
+console.log(totalArray); // 18 = 1 + 2 + 6 + 9
+// retorna apenas o que derem o resultado verdadeiro
+
+var filter = array.filter(function (valor) {
+  // retornar apenas os pares
+  return valor % 2 == 0; // return valor == 9 retornaria apenas os valores 9 por exemplo
+});
+console.log(filter); // [2, 6]
