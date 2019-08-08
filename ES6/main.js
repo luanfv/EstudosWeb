@@ -50,3 +50,17 @@ console.log(teste1()) // 6
 
 const teste2 = () => ({ nome: 'Luan', sexo: 'M'})
 console.log(teste2()) // {nome: 'Luan', sexo: 'M'}
+
+// DESESTRUTURAÇÃO
+const usuario = {
+    nome: 'Luan',
+    idade: 19,
+    endereco: {
+        cidade: 'Pelotas',
+        estado: 'RS'
+    }
+}
+
+const { nome, idade, endereco: { cidade }} = usuario
+
+console.log(nome, idade, cidade)

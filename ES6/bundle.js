@@ -71,3 +71,17 @@ var teste2 = function teste2() {
 };
 
 console.log(teste2()); // {nome: 'Luan', sexo: 'M'}
+// DESESTRUTURAÇÃO
+
+var usuario = {
+  nome: 'Luan',
+  idade: 19,
+  endereco: {
+    cidade: 'Pelotas',
+    estado: 'RS'
+  }
+};
+var nome = usuario.nome,
+    idade = usuario.idade,
+    cidade = usuario.endereco.cidade;
+console.log(nome, idade, cidade);
