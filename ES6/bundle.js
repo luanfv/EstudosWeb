@@ -49,3 +49,25 @@ var filter = array.filter(function (valor) {
   return valor % 2 == 0; // return valor == 9 retornaria apenas os valores 9 por exemplo
 });
 console.log(filter); // [2, 6]
+// ARROW FUNCTIONS
+// maneira alternativa de fazer funções que tem apenas o retorno como logica
+
+var arrayFunction = array.map(function (valor) {
+  return valor * 2;
+});
+console.log(arrayFunction); // função menos verbosa
+
+var teste1 = function teste1() {
+  return 6;
+};
+
+console.log(teste1()); // 6
+
+var teste2 = function teste2() {
+  return {
+    nome: 'Luan',
+    sexo: 'M'
+  };
+};
+
+console.log(teste2()); // {nome: 'Luan', sexo: 'M'}
