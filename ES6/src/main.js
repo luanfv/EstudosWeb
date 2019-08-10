@@ -21,7 +21,11 @@ const c = new classe()
 c.addToto()
 */
 
-import Api from './async_axios'
-const api = new Api()
-console.log(api.getUserInfo('Luanfv'))
-console.log(api.getUserInfo('Luanfvsa'))
+import { umPorSegundo, getUserGitHub, buscarUsuario } from './pratica_async_axios'
+
+async function ordem(){
+    console.log(buscarUsuario("Luanfv"))
+    await umPorSegundo()
+    await getUserGitHub()
+}
+ordem()
