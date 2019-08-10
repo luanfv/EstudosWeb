@@ -1,3 +1,4 @@
+/*
 //Importando uma função
 import { desestruturacao } from './desestruturacao'
 desestruturacao()
@@ -18,3 +19,9 @@ restSpread.spreadExemplo()
 import classe from './classes'
 const c = new classe()
 c.addToto()
+*/
+
+import Api from './async_axios'
+const api = new Api()
+console.log(api.getUserInfo('Luanfv'))
+console.log(api.getUserInfo('Luanfvsa'))
