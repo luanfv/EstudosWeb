@@ -1,0 +1,58 @@
+<html>
+    <meta charset="utf-8">
+    <head>
+
+    </head>
+
+    <body>
+
+        <div>
+
+            <input type="text" name="input1" placeholder="input">
+            <input type="text" class="a" placeholder="class">
+
+        </div>
+
+        <input id="b" placeholder="id">
+
+        <button class="botao">Verificar</button>
+
+    </body>
+</html>
+
+<script>
+    /*
+    querySelector rastreia o que for passado por parametro utilizando o DOM
+    */
+    //retorna por querySelector o valor do nome dentro do input dentro da div
+    function valueName(){
+        console.log("Name: ", document.querySelector("div input[name=input1]").value)
+    }
+
+    //retorna por querySelector o valor da classe dentro do input dentro da div
+    function valueClass(){
+        console.log("Class: ", document.querySelector("div input[class=a]").value)
+    }
+
+    //retorna por querySelector o valor do input que tem o id=b
+    function valueId(){
+        console.log("ID: ", document.querySelector("input#b").value)
+    }
+
+    //querySelectorAll retorna todos que possuirem a tag passada como parametro
+    function Inputs(){
+        console.log("Inputs: ", document.querySelectorAll("input"))
+    }
+
+
+
+    //Forma alternativa e mais limpa de acionar eventos do JavaScript
+    var botao = document.querySelector("button.botao")
+    botao.onclick = function(){
+        valueName() 
+        valueClass() 
+        valueId()
+        Inputs()
+    }
+
+</script>

@@ -1,0 +1,17 @@
+<script>
+    function verifica_idade(idade){
+        return new Promise(function(ok, reject){
+            setTimeout(function(){
+                return idade >= 18 ? ok() : reject()
+            }, 2000)
+        })
+    }
+
+    verifica_idade(15)
+    .then(function(){
+        console.log("Maior de idade, pode beber")
+    })
+    .catch(function(){
+        console.log("Menor de idade, sem bebida")
+    })
+</script>
